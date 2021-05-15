@@ -7,7 +7,7 @@
     "patch": 1
   },
   "tags": {},
-  "logoURI": "/images/coins/wbnb.png",
+  "logoURI": "/images/coins/wmatic.png",
   "keywords": ["pancake", "default"],
   "tokens": [
     {
@@ -25,46 +25,55 @@
       "chainId": 80001,
       "decimals": 18,
       "logoURI": "/images/coins/DAI.png"
+    },    
+    {
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "chainId": 137,
+      "decimals": 18
     },
     {
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
-      "address": "0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa",
-      "chainId": 80001,
-      "decimals": 18,
-      "logoURI": "/images/coins/ETH.png"
+      "name": "USDC",
+      "symbol": "USDC",
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "chainId": 137,
+      "decimals": 18
     },
     {
       "name": "Tether USD",
       "symbol": "USDT",
       "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       "chainId": 137,
-      "decimals": 18,
-      "logoURI": "/images/coins/USDT.png"
+      "decimals": 18
     },
     {
-      "name": "DAI Stablecoin",
-      "symbol": "DAI",
-      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "name": "Compound",
+      "symbol": "COMP",
+      "address": "0x8505b9d2254A7Ae468c0E9dd10Ccea3A837aef5c",
       "chainId": 137,
-      "decimals": 18,
-      "logoURI": "/images/coins/DAI.png"
+      "decimals": 18
     },
     {
-      "name": "Fish",
-      "symbol": "FISH",
-      "address": "0x3a3Df212b7AA91Aa0402B9035b098891d276572B",
-      "chainId": 137,
-      "decimals": 18,
-      "logoURI": "/images/coins/FISH.png"
-    },
-    {
-      "name": "Wrapped Ether",
-      "symbol": "WETH",
+      "name": "Ether",
+      "symbol": "ETH",
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "chainId": 137,
-      "decimals": 18,
-      "logoURI": "/images/coins/ETH.png"
+      "decimals": 18
+    },
+    {
+      "name": "Uniswap",
+      "symbol": "UNI",
+      "address": "0xb33EaAd8d922B1083446DC23f610c2567fB5180f",
+      "chainId": 137,
+      "decimals": 18
+    },
+    {
+      "name": "Wrapped Bitcoin",
+      "symbol": "wBTC",
+      "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+      "chainId": 137,
+      "decimals": 18
     }
   ]
 }
