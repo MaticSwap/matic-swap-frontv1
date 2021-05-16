@@ -1,7 +1,7 @@
 const priceContracts: {cakeAddress: string, busdAddress: string, lpAddress:string} = {
-  cakeAddress: '0xba26397cdff25f0d26e815d218ef3c77609ae7f1',
-  busdAddress: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-  lpAddress: '0x78D2616171c75FE9338BA26e0a8099272dd0bE92'
+  cakeAddress: '0xeb2778f74E5ee038E67AA6c77f0F0451ABd748FD',
+  busdAddress: '0x2791bca1f2de4661ed88a30c99a7a9449aa84174', // USDC
+  lpAddress: '0x1df7ADAeD1F7f36C822A3079198815b284aD8475'
 }
 
 export default priceContracts
