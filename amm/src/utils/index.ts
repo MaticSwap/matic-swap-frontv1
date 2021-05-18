@@ -18,19 +18,19 @@ export function isAddress(value: any): string | false {
 }
 
 const BSCSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  56: '',
-  97: 'testnet.'
+  137: 'mainnet',
+  80001: 'mumbai'
 }
 
 export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${BSCSCAN_PREFIXES[chainId] || BSCSCAN_PREFIXES[ChainId.MAINNET]}bscscan.com`
+  const prefix = `https://explorer-${BSCSCAN_PREFIXES[chainId] || BSCSCAN_PREFIXES[ChainId.MAINNET]}.maticvigil.com`
 
   switch (type) {
     case 'transaction': {
       return `${prefix}/tx/${data}`
     }
     case 'token': {
-      return `${prefix}/token/${data}`
+      return `${prefix}/tokens/${data}`
     }
     case 'address':
     default: {
