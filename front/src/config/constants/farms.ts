@@ -3,21 +3,6 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 1,
-    lpSymbol: 'MSWAP-USDC LP',
-    lpAddresses: {
-      80001: '',
-      137: '0xCf2829E0eE2C4FE480eB2C2e74469C0F8163E7a6',
-    },
-    tokenSymbol: 'MSWAP',
-    tokenAddresses: {
-      80001: '',
-      137: '0x1b81C8113B6bd8Ddf28F7b9D33e4723D85A6dc22',
-    },
-    quoteTokenSymbol: QuoteToken.USDC,
-    quoteTokenAdresses: contracts.usdc,
-  },
-  {
     pid: 0,
     lpSymbol: 'MSWAP-MATIC LP',
     lpAddresses: {
@@ -31,6 +16,21 @@ const farms: FarmConfig[] = [
     },
     quoteTokenSymbol: QuoteToken.MATIC,
     quoteTokenAdresses: contracts.wmatic,
+  },
+  {
+    pid: 1,
+    lpSymbol: 'MSWAP-USDC LP',
+    lpAddresses: {
+      80001: '',
+      137: '0xCf2829E0eE2C4FE480eB2C2e74469C0F8163E7a6',
+    },
+    tokenSymbol: 'MSWAP',
+    tokenAddresses: {
+      80001: '',
+      137: '0x1b81C8113B6bd8Ddf28F7b9D33e4723D85A6dc22',
+    },
+    quoteTokenSymbol: QuoteToken.USDC,
+    quoteTokenAdresses: contracts.usdc,
   },
   {
     pid: 2,

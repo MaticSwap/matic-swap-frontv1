@@ -8,6 +8,7 @@ type ChainTokenList = {
 }
 
 export const EMPTY = new Token(ChainId.MAINNET, '0x0000000000000000000000000000000000000000', 0, 'EMPTY', 'EMPTY')
+export const MSWAP = new Token(ChainId.MAINNET, '0x1b81C8113B6bd8Ddf28F7b9D33e4723D85A6dc22', 18, 'MSWAP', 'MSWAP Token')
 export const DAI = new Token(ChainId.MAINNET, '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063', 18, 'DAI', 'Dai Stablecoin')
 export const USDC = new Token(ChainId.MAINNET, '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', 6, '', 'USDC')
 export const USDT = new Token(ChainId.MAINNET, '0xc2132D05D31c914a87C6611C10748AEb04B58e8F', 6, 'USDT', 'Tether USD')

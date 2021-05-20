@@ -53,6 +53,13 @@
       "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
       "chainId": 137,
       "decimals": 18
+    },
+    {
+      "name": "MSWAP Token",
+      "symbol": "MSWAP",
+      "address": "0x1b81C8113B6bd8Ddf28F7b9D33e4723D85A6dc22",
+      "chainId": 137,
+      "decimals": 18
     }
   ]
 }
