@@ -426,7 +426,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           </FilterContainer>
         </ControlContainer>
         {renderContent()}
-        <Image src="/images/mswap/8.png" alt="illustration" width={1352} height={587} responsive />
+        
       </Page>
     </>
   )

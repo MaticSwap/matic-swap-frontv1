@@ -133,7 +133,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
   const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
-  const bsc = `https://bscscan.com/address/${lpAddress}`
+  const bsc = `https://explorer-mainnet.maticvigil.com/${lpAddress}`
   const info = `https://pancakeswap.info/pair/${lpAddress}`
   const cakePrice = usePriceCakeBusd()
   const bnbPrice = usePriceBnbBusd()
@@ -177,7 +177,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
           </StyledLinkExternal>
         </StakeContainer>
         <StyledLink href={bsc} external>
-          {TranslateString(999, 'BscScan')}
+          {TranslateString(999, 'Explore')}
         </StyledLink>
         <StyledLink href={info} external>
           {TranslateString(999, 'Info site')}

@@ -2047,9 +2047,9 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@Cfuture-binance/uikit":
+"@pancakeswap-libs/uikit@CFuture-binance/uikit":
   version "0.13.1"
-  resolved "https://codeload.github.com/Cfuture-binance/uikit/tar.gz/2202e9ac895e4517d499ef922863a5f4393e2635"
+  resolved "https://codeload.github.com/CFuture-binance/uikit/tar.gz/2202e9ac895e4517d499ef922863a5f4393e2635"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"

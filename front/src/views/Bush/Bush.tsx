@@ -65,7 +65,7 @@ const Bush: React.FC = () => {
     let apy = totalRewardPricePerYear.div(totalStakingTokenInPool).times(100)
 
     // /!\ todo: clean this shit
-    if (pool.tokenName === 'WBNB') {
+    if (pool.tokenName === 'WMATIC') {
       console.log(bnbPriceUSD.toJSON())
       apy = apy.multipliedBy(bnbPriceUSD.toJSON())
     }

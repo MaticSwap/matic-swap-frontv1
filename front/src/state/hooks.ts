@@ -40,7 +40,7 @@ export const useFarms = (): Farm[] => {
 }
 
 export const useFarmFromPid = (pid): Farm => {
-  const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))
+  const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))  
   return farm
 }
 
@@ -90,23 +90,20 @@ export const useBushs = (): Pool[] => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 6 // BUSD-BNB LP
+  const pid = 4 // MATIC-USDC LP
   const farm = useFarmFromPid(pid)
+  
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  // const pid = 1 // CAKE-BNB LP
-  // const bnbPriceUSD = usePriceBnbBusd()
-  // const farm = useFarmFromPid(pid)
-  // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  const pid = 1 // MSWAP-BUSD LP
+  const pid = 1 // MSWAP-USDC LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceEthBusd = (): BigNumber => {
-  const pid = 5 // ETH-BNB LP
+  const pid = 3 // ETH-USDC LP
   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO

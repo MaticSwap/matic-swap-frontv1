@@ -16,21 +16,21 @@ const useGetBullHiccupClaimableStatus = () => {
   const { account } = useWeb3React()
 
   useEffect(() => {
-    const checkClaimableStatus = async () => {
-      const [isBullClaimable, isHiccupClaimable] = (await bunnySpecialContract.methods
-        .canClaimMultiple(account, [BULL_NFT, HICCUP_NFT])
-        .call()) as boolean[]
+    // const checkClaimableStatus = async () => {
+    //   const [isBullClaimable, isHiccupClaimable] = (await bunnySpecialContract.methods
+    //     .canClaimMultiple(account, [BULL_NFT, HICCUP_NFT])
+    //     .call()) as boolean[]
 
-      setClaimables({
-        [BULL_NFT]: isBullClaimable,
-        [HICCUP_NFT]: isHiccupClaimable,
-      })
-      setHasChecked(true)
-    }
+    //   setClaimables({
+    //     [BULL_NFT]: isBullClaimable,
+    //     [HICCUP_NFT]: isHiccupClaimable,
+    //   })
+    //   setHasChecked(true)
+    // }
 
-    if (account) {
-      checkClaimableStatus()
-    }
+    // if (account) {
+    //   checkClaimableStatus()
+    // }
   }, [account, setClaimables, setHasChecked])
 
   return {
